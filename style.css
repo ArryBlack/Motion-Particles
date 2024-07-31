@@ -95,6 +95,31 @@
 .card{
     background-color: red;
     border-radius: 20px;
+    transition: 300ms;
+}
+.card:hover{
+     transform: scale(1.025);
+     transition: 300ms;
+}
+.link_container{
+    margin: 5em 0;
+    text-align: center;
+
+}
+.projects_btn{
+    background-color: rgb(210, 66, 4);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1em 2em;
+    transition: color 200ms;
+
+}
+.projects_btn:hover{
+    background-color: white;
+    border-radius: 2px solid rgb(214, 65, 1);
+    color:rgb(191, 57, 0) ;
+    transition: 200ms;
 }
 @media (min-width:900px) {
     .nav_bar{
