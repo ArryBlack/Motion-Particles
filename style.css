@@ -124,14 +124,14 @@
 }
 .services_list{
     margin: 2em;
-    display: flex;
-    align-items: center;
-    gap:1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1em;
     
 }
 .service_list--item{
-    width: 270px;
-    height: 500px;
+    
     border-radius: 20px;
     background-color: red;
     
@@ -170,10 +170,11 @@
         
     
     }
+    .services_list{
+      
+        grid-template-columns: 32.7% 32.7% 32.7%;
+        grid-template-rows: 500px 500px;
+        
+    }
     
-}
-
-.footer{
-    background-color: gray;
-    padding: 2em;
 }
