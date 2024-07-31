@@ -121,6 +121,20 @@
     color:rgb(191, 57, 0) ;
     transition: 200ms;
 }
+.services_list{
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.service_list--item{
+    min-width: 232px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: red;
+    
+}
 @media (min-width:900px) {
     .nav_bar{
         margin: 0 2em;
@@ -151,4 +165,9 @@
         
     
     }
+}
+
+.footer{
+    background-color: gray;
+    padding: 2em;
 }
