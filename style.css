@@ -19,18 +19,22 @@
     cursor: pointer;
 }
 .mobile_nav{
-    display: flex;
+    display: block;
     overflow: hidden;
 
-    flex-direction: column;
     height: 100vh;
     transition: 300ms;
-    margin-bottom: 1em;
+}
+.mobile_nav li{
+    list-style-type: none;
+    margin: 2em;
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+
 }
 .mobile_nav a{
     color: white;
     text-decoration: none;
-    margin: 1em;
 }
 .toggle_menu{
     height: 0;
@@ -41,10 +45,24 @@
 .menu_links{
     display: none;
 }
+.social_links{
+    margin: 2em 2em 0 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+.social_links i{
+    color: white;
+    transition: 300ms;
+}
+.social_links i:hover{
+    color: rgb(191, 57, 0);
+    transition: 300ms;
+}
 
 .hero_section{
-   
-    margin: 1em 0;
+    background-color: black;
+    color: white;
     padding:5em 2em;
 }
 .hero_section--heading{
@@ -65,8 +83,19 @@
 
 }
 
+.card_container{
+   
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 1em;
 
-
+}
+.card{
+    background-color: red;
+    border-radius: 20px;
+}
 @media (min-width:900px) {
     .nav_bar{
         margin: 0 2em;
@@ -90,5 +119,11 @@
     .menu_links a:hover{
         color: rgb(191, 57, 0);
         transition: 200ms;
+    }
+    .card_container{
+        grid-template-columns: 32.7% 32.7% 32.7%;
+        grid-template-rows: 200px 200px;
+        
+    
     }
 }
