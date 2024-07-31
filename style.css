@@ -8,7 +8,7 @@
     color:white;
 }
 .nav_bar{
-    padding: 1em 2em;
+    padding: 2em;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid white;
@@ -67,6 +67,7 @@
 }
 .hero_section--heading{
     text-align: center;
+    font-size: 3rem;
 }
 .hero_section--video{
   margin: 5em 0;
@@ -124,8 +125,8 @@
 .services_list{
     margin: 2em;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap:1em;
     
 }
 .service_list--item{
@@ -160,12 +161,16 @@
         color: rgb(191, 57, 0);
         transition: 200ms;
     }
+    .hero_section--heading{
+        font-size: 3rem;
+    }
     .card_container{
         grid-template-columns: 32.7% 32.7% 32.7%;
         grid-template-rows: 200px 200px;
         
     
     }
+    
 }
 
 .footer{
